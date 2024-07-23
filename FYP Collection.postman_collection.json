@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "b5705ca7-c060-485d-9ca5-7818607cda01",
+		"name": "FYP Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34720638"
+	},
+	"item": [
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "addPet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namePet\": \"Boby\",\r\n    \"race\": \"Pastor Aleman\",\r\n    \"gender\": \"Macho\",\r\n    \"age\": \"5\",\r\n    \"description\": \"Perro color negro con cafe, tamaño promedio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/pet/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"pet",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editPet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namePet\": \"Molly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/pet/edit/6691def5d2c43a9c67502199",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"pet",
+								"edit",
+								"6691def5d2c43a9c67502199"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/pet/delete/6691e91c10a9ec42c7784ef4",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"pet",
+								"delete",
+								"6691e91c10a9ec42c7784ef4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/pet/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"pet",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/pet/getById/6691def5d2c43a9c67502199",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"pet",
+								"getById",
+								"6691def5d2c43a9c67502199"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vet",
+			"item": [
+				{
+					"name": "addVet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Juan\",\r\n    \"surname\": \"Sipaz\",\r\n    \"phoneNumber\": \"30317163\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/vet/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"vet",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Roberto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/vet/edit/6691eae01aa2974ccfd3f9ff",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"vet",
+								"edit",
+								"6691eae01aa2974ccfd3f9ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/vet/delete/6691eae01aa2974ccfd3f9ff",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"vet",
+								"delete",
+								"6691eae01aa2974ccfd3f9ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/vet/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"vet",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2656/fyp/vet/getById/6691eba03fa542bc9d4f8467",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"vet",
+								"getById",
+								"6691eba03fa542bc9d4f8467"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VeterinaryAppoinment",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"60d5ec49f33a5e23a828b456\",\r\n    \"date\": \"2024-07-20T10:30:00.000Z\",\r\n    \"race\": \"Race Name\",\r\n    \"gender\": \"Gender\",\r\n    \"age\": 3,\r\n    \"description\": \"Description of the appointment\",\r\n    \"vet\": \"60d5ec49f33a5e23a828b789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/veterinaryAppoinment/createAppointment",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"veterinaryAppoinment",
+								"createAppointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"60d5ec49f33a5e23a828b456\",\r\n    \"date\": \"2024-07-21T11:30:00.000Z\",\r\n    \"race\": \"Updated Race Name\",\r\n    \"gender\": \"Updated Gender\",\r\n    \"age\": 4,\r\n    \"description\": \"Updated description of the appointment\",\r\n    \"vet\": \"60d5ec49f33a5e23a828b789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/veterinaryAppoinment/updateAppointment",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"veterinaryAppoinment",
+								"updateAppointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/veterinaryAppoinment/deleteAppointment/60d5ec49f33a5e23a828b456",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"veterinaryAppoinment",
+								"deleteAppointment",
+								"60d5ec49f33a5e23a828b456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/veterinaryAppoinment/getAppointmentById/60d5ec49f33a5e23a828b456",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"veterinaryAppoinment",
+								"getAppointmentById",
+								"60d5ec49f33a5e23a828b456"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AdoptionAppointment",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"60d5ec49f33a5e23a828b456\",\r\n    \"veterinary\": \"Nombre del veterinario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/adoptionAppointment/createAdoptionAppointment",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"adoptionAppointment",
+								"createAdoptionAppointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/adoptionAppointment/getAdoptionAppointmentById/60d5ec49f33a5e23a828b456",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"adoptionAppointment",
+								"getAdoptionAppointmentById",
+								"60d5ec49f33a5e23a828b456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/adoptionAppointment/deleteAdoptionAppointment/60d5ec49f33a5e23a828b456",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"adoptionAppointment",
+								"deleteAdoptionAppointment",
+								"60d5ec49f33a5e23a828b456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"veterinary\": \"Nombre del veterinario actualizado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2656/fyp/adoptionAppointment/updateAdoptionAppointment/60d5ec49f33a5e23a828b456",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"fyp",
+								"adoptionAppointment",
+								"updateAdoptionAppointment",
+								"60d5ec49f33a5e23a828b456"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "localhost:2656",
+			"type": "string"
+		},
+		{
+			"key": "userURL",
+			"value": "/fyp/user",
+			"type": "string"
+		}
+	]
+}
